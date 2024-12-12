@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivo Mobile Store - Products</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            background-color: #444;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #333;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        /* Product Cards */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .product-card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#support">Support</a>
+        <a href="#community">Community</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Vivo Mobile Store</h1>
+        <p>Explore Our Latest Range of Vivo Smartphones</p>
+    </div>
+
+    <!-- Products Section -->
+    <div class="product-container">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/d/1/-original-imagz6tzjgggzygu.jpeg?q=70" alt="Vivo VT3">
+            <h3>Vivo VT3</h3>
+            <p>Starting from: Rs.34000</p>
+            <p class="price">Rs.34,000</p>
+            <button onclick="window.location.href='https://www.vivo.com/in/product/vivo-vt3'">Buy Now</button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1718336799873/c463ca8aedafd5e9589d83567c48a4df.png" alt="Vivo XFold3 Pro">
+            <h3>Vivo XFold3 Pro</h3>
+            <p>Starting from: Rs.44000</p>
+            <p class="price">Rs.44,000</p>
+            <button onclick="window.location.href='https://www.vivo.com/in/product/vivo-xfold3'">Buy Now</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1714985029832/051b5bf55c7a5e539cbb405c7ebc8e71.png" alt="Vivo V30e">
+            <h3>Vivo V30e</h3>
+            <p>Starting from: Rs.88000</p>
+            <p class="price">Rs.88,000</p>
+            <button onclick="window.location.href='https://www.vivo.com/in/product/vivo-v30e'">Buy Now</button>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1703155786129/235fc4fbe0277e6fc5f25fc84fabdd7f.png" alt="Vivo X Pro 100">
+            <h3>Vivo X Pro 100</h3>
+            <p>Starting from: Rs.100000</p>
+            <p class="price">Rs.100,000</p>
+            <button onclick="window.location.href='https://www.vivo.com/in/product/vivo-x-pro-100'">Buy Now</button>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+            <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1705654195706/f6bf968c16426e86ddbc5bc8be9470d1.png" alt="Vivo Y100 5G">
+            <h3>Vivo Y100 5G</h3>
+            <p>Starting from: Rs.60000</p>
+            <p class="price">Rs.60,000</p>
+            <button onclick="window.location.href='https://www.vivo.com/in/product/vivo-y100-5g'">Buy Now</button>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+            <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1697464814659/124425e3249999f164f76fc2d21ab9da.png" alt="Vivo V29e 5G">
+            <h3>Vivo V29e 5G</h3>
+            <p>Starting from: Rs.30000</p>
+            <p class="price">Rs.30,000</p>
+            <button onclick="window.location.href='https://www.vivo.com/in/product/vivo'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vivo Mobile Store. All Rights Reserved.</p>
+        <p><a href="mailto:support@vivostore.com" style="color: white; text-decoration: none;">Contact Us</a></p>
+    </footer>
+
+    <script>
+        // JavaScript for future interactions or dynamic loading (if needed)
+    </script>
+</body>
+</html>
