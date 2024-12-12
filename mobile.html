@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #333;
+            padding: 2px 2px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 7px 8px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            background-color: #444; /* Slightly lighter on hover */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 4px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* New section below the header (for navigation links) */
+        .sub-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .sub-nav a {
+            background-color: #333;
+            color: white;
+            padding: 7px 7px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .sub-nav a:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            background-color: #444;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Container styles */
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px 60px 20px; /* Adjust padding to create space for the header and footer */
+        }
+
+        /* Product card styles */
+        .products {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .products img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .products p {
+            margin: 0;
+            font-size: 18px;
+            color: black;
+        }
+
+        .products a {
+            text-decoration: none;
+        }
+
+        .products button {
+            background-color: black;
+            color: white;
+            border: 2px solid transparent;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .products button:hover {
+            background-color: pink;
+            border: 2px solid #f1f1f1;
+        }
+
+        /* Hover effect on product cards */
+        .products:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vivo Mobile Store</h1>
+        <p>Explore the latest Vivo smartphones and choose the best for you</p>
+        <nav>
+            <a href="#Shopping">Community</a>
+            <a href="#support">Support</a>
+            <a href="#products">Products</a>
+            <a href="#explore">Explore Vivo</a>
+            <a href="#community">Community</a>
+            <a href="#Help">Help</a>
+        </nav>
+    
+    </header>
+
+    
+    
+
+    <!-- Main content (product display) -->
+    <div id="container">
+        <!-- Product items will be dynamically added here -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Vivo Mobile Store. All Rights Reserved.</p>
+        <p>Contact Us: support@vivostore.com</p>
+       
+    </footer>
+
+    <script>
+        const store = [
+            {
+                id: 1,
+                product: "Vivo",
+                model: "vivo VT3",
+                price: "Starting from: Rs.34000",
+                image: "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/d/1/-original-imagz6tzjgggzygu.jpeg?q=70",
+                link: "https://www.vivo.com/in/product/vivo-vt3"
+            },
+            {
+                id: 2,
+                product: "Vivo",
+                model: "XFold3 pro",
+                price: "Starting from: Rs.44000",
+                image: "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1718336799873/c463ca8aedafd5e9589d83567c48a4df.png",
+                link: "https://www.vivo.com/in/product/vivo-xfold3"
+            },
+            {
+                id: 3,
+                product: "Vivo",
+                model: "V30e",
+                price: "Starting from: Rs.88000",
+                image: "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1714985029832/051b5bf55c7a5e539cbb405c7ebc8e71.png",
+                link: "https://www.vivo.com/in/product/vivo-v30e"
+            },
+            {
+                id: 4,
+                product: "Vivo",
+                model: "X pro 100",
+                price: "Starting from: Rs.100000",
+                image: "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1703155786129/235fc4fbe0277e6fc5f25fc84fabdd7f.png",
+                link: "https://www.vivo.com/in/product/vivo-x-pro-100"
+            },
+            {
+                id: 5,
+                product: "Vivo",
+                model: "Vivo Y100 5G",
+                price: "Starting from: Rs.60000",
+                image: "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1705654195706/f6bf968c16426e86ddbc5bc8be9470d1.png",
+                link: "https://www.vivo.com/in/product/vivo-y100-5g"
+            },
+            {
+                id: 6,
+                product: "Vivo",
+                model: "Vivo V29e 5G",
+                price: "Starting from: Rs.30000",
+                image: "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1697464814659/124425e3249999f164f76fc2d21ab9da.png",
+                link: "https://www.vivo.com/in/product/vivo",
+            }
+        ];
+
+        const con = document.getElementById('container');
+        store.forEach(product => {
+            con.innerHTML += `
+                <div class="products">
+                    <img src="${product.image}" height="100px">
+                    <br><br>
+                    <b><p>${product.model}</p></b>
+                    <br>
+                    <p>${product.price}</p>
+                    <br><br>
+                    <a href="${product.link}" target="_blank">
+                        <button>Buy Now</button>
+                    </a>
+                </div>
+          `;
+        });
+
+        let cart = (id) => {
+            console.log("Product ID:", id);
+        };
+    </script>
+</body>
+</html>
